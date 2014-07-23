@@ -15,3 +15,13 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+$(window).scroll(function(){
+  $('#menu_left').css('left','-'+$(window).scrollLeft()+'px');
+});
+
+$( window ).resize(function() {
+  position = $(".drafter_title").position();
+  $('#menu_left').css("left", position.left);
+  $('.modal-dialog').css("margin-left",position.left + 100);
+});

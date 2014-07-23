@@ -1,0 +1,13 @@
+<div class="content">
+  <%= render 'menu/top' %>
+  <div id="hot">
+  	<%= render 'menu/left' %>
+	<div style="margin-left: 100px;">
+		<div id="nav">	
+		<% if current_user %>
+		  <% @post = Post.new %>
+		  <%= render 'panels/start' %>
+		<%end%>
+	</div>
+  </div>
+</div>

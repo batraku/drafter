@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-root :to => 'posts#index'
+root :to => 'posts#hot'
 resources :user_sessions
 resources :users
+resources :posts
 
 get 'login' => 'user_sessions#new', :as => :login
 post 'logout' => 'user_sessions#destroy', :as => :logout
