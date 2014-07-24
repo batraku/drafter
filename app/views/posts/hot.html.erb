@@ -1,13 +1,13 @@
 <div class="content">
+  <%= render 'menu/left' %>
   <%= render 'menu/top' %>
-  <div id="hot">
-  	<%= render 'menu/left' %>
-	<div style="margin-left: 100px;">
-		<div id="nav">	
-		<% if current_user %>
-		  <% @post = Post.new %>
-		  <%= render 'panels/start' %>
-		<%end%>
-	</div>
+  <div id="hot">	
+    <% if current_user %>
+      <% @post = Post.new %>
+      <div id="user_panels">
+        <%= render 'panels/start' %>
+      </div>
+    <%end%>
+    <div class="posts">Типу відображаємо пости</div>
   </div>
 </div>

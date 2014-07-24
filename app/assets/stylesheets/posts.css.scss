@@ -1,4 +1,11 @@
 #hot {
-  min-width: 1024px;
-  max-width: 1440px;
+  display: block;
+  min-width: 924px;
+  max-width: 1340px;
+  height: 100%;
+  margin:auto;
+  .posts {
+    background-color: #FFF;
+    margin-left: 100px;
+  }
 }

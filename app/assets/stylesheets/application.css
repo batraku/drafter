@@ -16,9 +16,24 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body, html { 
+  width: 100%; 
+  height: 100%; 
+  background-color: #e2e2e2; 
+}
+
 .modal-dialog {
   margin: 0 0 0 100px;
   height: 100%;
+}
+
+.modal-header {
+  height: 90px;
+  background-color: #3eb4c6;
+}
+
+.modal-title {
+  color: #FFF;
 }
 
 .modal-content {
@@ -26,4 +41,5 @@
   z-index: 1100;
   border: none;
   border-radius: 0;
+  background-color: #FFF;
 }
